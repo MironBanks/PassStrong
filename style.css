@@ -103,22 +103,6 @@ lable:before {
   background-color: #2DAF7D;
 }
 
-
-
-
-
-.progress-bar_item-1 {
-
-}
-
-.progress-bar_item-2 {
-
-}
-
-.progress-bar_item-3 {
-
-}
-
 .progress-bar_text {
   display: inline-block;
   color: #aaa;
@@ -135,18 +119,17 @@ lable:before {
   margin-right: .8%;
   border-radius: 5px;
   float: left;
-  
   transition: background-color .2s, visisility .1s;
 }
 
-.form-2 .progress-bar_item-1.active {
+.form-2 .active-1 {
   background-color: #FF4B47;
 }
 
-.form-2 .progress-bar_item-2.active {
+.form-2 .active-2 {
   background-color: #F9AE35;
 }
 
-.form-2 .progress-bar_item-3.active {
+.form-2 .active-3 {
   background-color: #2DAF7D;
 }

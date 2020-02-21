@@ -63,9 +63,10 @@ inputOne.addEventListener('keypress', function (event) {
 //second progress bar
 
 const inputTwo = document.querySelector(".input-2")
-const pbTwo1 = document.querySelector(".progress-bar_item-2-1")
-const pbTwo2 = document.querySelector(".progress-bar_item-2-2")
-const pbTwo3 = document.querySelector(".progress-bar_item-2-3")
+const pbTwo1 = document.getElementById("pbTwo1")
+const pbTwo2 = document.getElementById("pbTwo2")
+const pbTwo3 = document.getElementById("pbTwo3")
+
 const pbTextTwo = document.getElementById('progress-bar_text_two');
 
 function inputLengthTwo() {
@@ -77,26 +78,30 @@ function checkPassStrongTwo() {
 
 
 	if (lenTwo === 0) {
-
+		pbTwo1.classList.remove('active-1')
+		pbTwo2.classList.remove('active-2')
+		pbTwo3.classList.remove('active-3')
 
 		pbTextTwo.innerHTML = "Password is blank"
 
 
 	} else if (lenTwo >= 0 && lenTwo <= 4) {
-
-
-
+		pbTwo1.classList.add('active-1')
+		pbTwo2.classList.remove('active-2')
+		pbTwo3.classList.remove('active-3')
 		pbTextTwo.innerHTML = "Too weak!"
 
 
 	} else if (lenTwo > 4 && lenTwo <= 8) {
-
-
+		pbTwo2.classList.add('active-2')
+		pbTwo3.classList.remove('active-3')
 		pbTextTwo.innerHTML = "Could be stronger"
 
 
 	} else {
-
+		pbTwo1.classList.add('active-1')
+		pbTwo2.classList.add('active-2')
+		pbTwo3.classList.add('active-3')
 		pbTextTwo.innerHTML = "Strong password"
 
 	}
