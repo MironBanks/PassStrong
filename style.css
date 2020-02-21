@@ -88,12 +88,27 @@ lable:before {
   transition: background-color .2s, visisility .1s;
 }
 
-.form-1 .active {
+.form-1 .active_1 {
   visibility: visible;
+  background-color: #FF4B47;
 }
 
+.form-1 .active_2 {
+  visibility: visible;
+  background-color: #F9AE35;
+}
+
+.form-1 .active_3 {
+  visibility: visible;
+  background-color: #2DAF7D;
+}
+
+
+
+
+
 .progress-bar_item-1 {
-  
+
 }
 
 .progress-bar_item-2 {
